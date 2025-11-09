@@ -1,0 +1,19 @@
+h1{
+    background-color: lightgreen;
+    text-align: center;
+    padding: 5px;
+    font-size: xx-large;
+}
+p{
+    text-align: center;
+    background-color: tomato;  
+    padding: 2px;
+    font-size:larger;
+}
+a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+
+}
