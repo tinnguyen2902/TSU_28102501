@@ -1,0 +1,9 @@
+button{
+    height: 100px;
+    width: 500px;
+    border-left: 30px groove purple;
+    border-right: 20px dotted yellow;
+    border-top: 30px solid red;
+    border-bottom: 30px double pink;
+    background-color: green;
+}

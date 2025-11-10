@@ -1,0 +1,11 @@
+
+h1{
+    color: #358;
+}
+a{
+    color: hotpink;
+}
+a:link{color: red;}
+a:visited {color: #61d82e;}
+a:hover {color: aqua;}
+a:active {color: black;}

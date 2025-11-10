@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+a{
+    background-color:green;
+    color: yellowgreen; 
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+a:active{
+    background-color: black;
+    color: white;
+}
