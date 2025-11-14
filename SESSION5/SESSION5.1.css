@@ -1,0 +1,10 @@
+button{
+    height: 50px;
+    width: 150px;
+    background-color: green;
+    color: hotpink;
+    border-bottom: 5px solid black;
+    border-top: 5px dotted yellow;
+    border-left: 3px dashed wheat;
+    border-right: 5px double #69d00f;
+}

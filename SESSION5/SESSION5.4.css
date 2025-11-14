@@ -1,0 +1,16 @@
+div{
+    height: 60px;
+    width: 300px;
+    text-align: center;
+    color: white;
+    border: 5px solid black;
+    line-height: 50px;
+    margin: 10px auto;
+    background-color: brown;
+}
+div:hover{
+    transform: rotate(45deg) ;
+    transition:5s;
+    color: yellow;
+    background-color: hotpink;
+}

@@ -1,0 +1,101 @@
+.bt1{
+    display: block;
+    height: 100px;
+    width: 200px;
+    border: 19px double rgba(239, 132, 225, 0.666);
+    background-color: #3c6033;
+    text-align: center;
+    line-height: 90px; 
+}
+.bt1:hover{
+    opacity:0.6;
+}
+.bt2{
+    height: 100px;
+    width: 200px;
+    border: 10px dotted yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 92, 138);
+}
+.bt2:hover{
+    background-color: yellow;
+    color: chocolate;
+}
+.bt3{
+    display: inline-block;
+    border: 10px inset hotpink;
+    color: yellow;
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    text-align: center;
+    line-height: 100px;
+}
+.bt3:hover{
+    transform: scale(1.2);
+    border: 0;
+    transition: 4s;
+}
+.bt4{
+    border: 10px solid red ;
+    display: flex;
+    height: 100px;
+    width: 200px;
+    color: #3c6033;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    transition: 4s;
+}
+.bt4:hover{
+    border: 20px double green; 
+    background-color: blue;
+    color: yellow;
+}
+.bbt{
+    display: inline-block;
+    border: 10px inset hotpink;
+    color: yellow;
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    text-align: center;
+    line-height: 100px;
+    transition: 4s;
+}
+.bbt:hover{
+    background-color: antiquewhite;
+    transform: rotate(-30deg);
+}
+.bt6{
+    border: 10px solid red ;
+    display: flex;
+    height: 100px;
+    width: 200px;
+    color: #3c6033;
+    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    transition: 4s;
+    text-decoration: none;
+}
+.bt6:hover{
+    border-radius: 60%;
+    background-color: greenyellow;
+    color: hotpink;
+}
+.bt7{
+    height: 100px;
+    width: 200px;
+    border: 0px solid yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 92, 138);
+    transition: 4s;
+}
+.bt7:hover{
+    border: 10px solid black;
+}
