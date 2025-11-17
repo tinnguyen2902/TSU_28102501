@@ -1,0 +1,182 @@
+.card{
+    width: 400px;
+    height: 260px;
+    border-radius: 10px;
+    background: #c28181;
+    font-family: sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0.2);
+}
+.image{
+    width: 400px;
+    height: 200px;
+    /* display: block; */
+    position:relative;
+    bottom: 20px;
+}
+.view{
+    display: inline-flex;
+    align-items: center;
+    background: yellow;
+    padding: 10px 20px;
+    border-radius: 40px;
+    position:relative;
+    bottom: 62px;
+    color: hotpink;
+    font-size: 15px;
+    
+}
+.view-icon{
+    margin-right: 10px;
+}
+.content{
+    position: relative;
+    bottom: 56px;
+    font-size: 15px;
+    left: 20px;
+}
+/* code 2 */
+.card2{
+position: relative;
+width: 450px;
+height: 350px;
+background-image: url(./../Anh/anh\ ki\ su.jpeg);
+border-radius: 20px;
+}
+.tag{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 20%;
+}
+.main{
+    font-size: 70px;
+    position: absolute;
+    left: 370px;
+    top: 40px;
+    opacity: 0.8;
+    color: yellowgreen;
+    border: 5px solid black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hotpink;
+    border-radius: 20%;
+}
+.step1{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 60px;
+    position: absolute;
+    left: 370px;
+    top: 150px;
+    opacity: 0.8;
+    color: yellowgreen;
+    border:5px solid red;
+    border-radius: 20%;
+}
+.step2{
+    font-size: 60px;
+    position: absolute;
+    left: 370px;
+    top: 250px;
+    opacity: 0.8;
+    color: yellowgreen;
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    border: 5px solid red;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+}
+.card-text{
+    position: absolute;
+    bottom: 10px;
+    color: yellow;
+    border: 5px double hotpink;
+}
+.connector1{
+    border: 5px double black;
+    transform: rotate(90deg);
+    width: 40px;
+    position: absolute;
+    left: 370px;
+    top: 120px;
+}
+.connector2{
+    border: 5px double black;
+    transform: rotate(90deg);
+    width: 35px;
+    position: absolute;
+    left: 370px;
+    bottom: 120px;
+}
+.glass1{
+    border: 3px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+    opacity: 0.4;
+    background-color: honeydew;
+}
+.glass2{
+    border: 3px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 30%;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    opacity: 0.4;
+    background-color: honeydew;
+}
+.glass3{
+    border: 3px solid black;
+    width: 450px;
+    height: 350px;
+    opacity: 0;
+    background-color: honeydew;
+}
+/* bt3 */
+.file{
+    background-image: url(https://img.lovepik.com/photo/50052/4193.jpg_wh860.jpg);
+    height:300px;
+    width: 450px;
+    border-radius: 10%; 
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+}
+.content31{
+    color: #27ef63;
+    position: absolute;
+    top: 930px;
+    left: 50px;
+    font-size: 30px;
+    
+}
+.content32{
+    color: yellow;
+    position: absolute;
+    top: 990px;
+    left: 50px;
+    font-size: 25px;
+}
+.content33{
+    color: yellow;
+    position: absolute;
+    top: 1020px;
+    left: 50px;
+}
+/* khoang cach van chua on can xem xet lai o doan 1000px... */

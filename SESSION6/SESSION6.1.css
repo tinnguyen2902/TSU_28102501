@@ -1,0 +1,31 @@
+.main{
+   border: 2px solid blue;
+   text-align: center;
+   background-color: blueviolet;
+   color: rgb(157, 224, 151);
+   padding: 20px;
+} 
+.Home, .About, .Contact{
+text-decoration: none;
+   color: yellow;
+   margin: 0 10px;
+}
+/* doan 2 */
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 40px;
+}
+.avatar{
+    border-radius: 50%;
+}
+/* doan 3 */
+.end{
+    border: 1px double white;
+    text-align: center;
+    background-color: pink;
+}
+
+   

@@ -1,0 +1,15 @@
+.container{
+    border: 2px solid black;
+
+}
+.big, .small{
+    border: 2px solid black;
+    display:inline;
+}
+.big{
+
+}
+.small{
+
+}    
+

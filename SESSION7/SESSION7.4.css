@@ -1,0 +1,29 @@
+.header{
+    background-color: rgb(118, 118, 61);
+    height: 50px;
+    padding-left: 1ch;
+}
+.container{
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.Sidebar{
+    background-color: aqua;
+    width: 25%;
+    height: ;
+    padding-left: 1ch; 
+}
+.Content{
+    background-color: aquamarine;
+    width: 80%;
+    padding-left: 1ch;
+    flex: 1;
+}
+.Footer{
+    background-color: rgb(215, 91, 91);
+    height: 50px;
+    margin-top: 10px;
+    padding-left: 1ch;
+}

@@ -1,0 +1,17 @@
+.container{
+    background-color: rgb(174, 174, 232);
+    display:grid;
+    gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+    border: 2px double orangered;
+}
+.item{
+    width: 100px;
+    height: 40px;
+    background-color: brown;
+    text-align: center;
+    line-height: 2.5pc;
+    color: azure;
+    border-radius: 10%;
+}

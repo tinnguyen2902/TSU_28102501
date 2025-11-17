@@ -1,0 +1,15 @@
+.flex-container{
+    height: 500px;
+    background-color: rgb(212, 212, 160); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    line-height: 90px;
+}
