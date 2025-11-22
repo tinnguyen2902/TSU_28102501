@@ -1,0 +1,26 @@
+div{
+    display: flex;
+    gap: 2px;
+}
+.box{
+    width: 50%;
+    height: 20px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: aqua;
+    margin-bottom:0 ;
+}
+.box3{
+    margin: 0;
+    border: 1px solid black;
+    text-align: center;
+    background-color: aqua;
+}
+@media (max-width: 1024px) {
+    div, .box{
+        width: 100%;
+        background-color: yellow;
+        display: block;
+        margin: 0;
+    }
+}

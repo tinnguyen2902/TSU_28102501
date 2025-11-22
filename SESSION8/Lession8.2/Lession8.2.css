@@ -1,0 +1,29 @@
+section {
+  display: flex;
+  border: 1px solid red;
+  width: 100%;
+}
+.column {
+  border: 1px solid black;
+  width: 25%;
+  height: 20px;
+  text-align: center;
+  background-color: bisque;
+}
+@media (max-width: 1024px){
+  section {
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .column{
+    width: 100%;
+  }
+}
+@media (max-width:480px){
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,12 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
     display: flex;
+    
 }
-.big{
+.big {
     border: 1px solid;
+    display: flex;
+
+    
+    
 }
-.small{
+.container-child {
+    display: flex;
+}
+.small {
     border: 1px solid;
-}
-.container-child{
-    align-content: space-evenly;
+    
 }
