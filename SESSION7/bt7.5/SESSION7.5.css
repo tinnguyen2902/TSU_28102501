@@ -5,19 +5,19 @@
 }
 .container{
     display: flex;
-    
+    background-color: bisque;
 }
 .big {
     border: 1px solid;
-    display: flex;
-
+    width: 50vw;
     
     
 }
 .container-child {
     display: flex;
+    
 }
 .small {
     border: 1px solid;
-    
+    width: 25vw;
 }
