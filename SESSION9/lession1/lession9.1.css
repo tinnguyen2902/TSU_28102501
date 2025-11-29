@@ -1,0 +1,362 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: rgba(61, 13, 13, 0.717); */
+background: linear-gradient(#333333, #090707);;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid;
+  align-items: center;
+}
+.imglogo {
+  padding: 24px;
+}
+.header1 {
+  display: flex;
+  gap: 46px;
+  padding-right: 120px;
+}
+.nva {
+  display: flex;
+  gap: 27px;
+  color: #ffffff;
+  align-items: center;
+}
+.Join {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 15px 50px;
+}
+.hero-box {
+  margin-left: 263px;
+  margin-right: 263px;
+}
+.hero-title {
+  margin-top: 181px;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 59px;
+  color: white;
+  text-align: center;
+}
+
+.blue-text {
+  color: #2d8cff;
+}
+
+/* Đoạn mô tả */
+.hero-desc {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Vùng chứa 2 nút */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Nút trái */
+.btn-left {
+  background-color: #0d6efd;
+  color: white;
+  padding: 12px 34px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Nút phải */
+.btn-right {
+  background-color: transparent;
+  color: white;
+  padding: 12px 34px;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.img21 {
+  text-align: center;
+  margin-bottom: 172px;
+}
+.img2 {
+  height: 400px;
+  width: 800px;
+  margin-top: 54px;
+}
+.content-ar {
+  text-align: center;
+}
+.content-ar1 {
+  color: #ffffff;
+  margin-bottom: 19px;
+}
+.content-ar2 {
+  color: #ffffff;
+}
+.content-menu {
+  color: #ffffff;
+}
+.aside-menu-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-menu {
+  display: flex;
+  margin-left: 120px;
+  margin-right: 120px;
+  margin-top: 80px;
+  gap: 23px;
+}
+.aside-menu1,
+.aside-menu2,
+.aside-menu3 {
+  border: 1px solid white;
+  margin: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.aside-menu1 {
+  background-color: #c96408;
+  padding: 20px;
+}
+
+.menu-logo1,
+.menu-logo2 {
+  height: 64.16px;
+  width: 66.5px;
+}
+
+.menu-logo1 {
+  transform: translate(-75px, -25px);
+}
+
+.menu-logo2 {
+  transform: translate(75px, -25px);
+}
+
+.aside-menu2 {
+  background-color: #7937bb;
+  padding-top: 80px;
+}
+
+.aside-menu3 {
+  background-color: #3775ed;
+  padding-top: 80px;
+}
+.imgjch {
+  width: 800px;
+  height: 200px;
+  margin-top: 54px;
+  margin-left: 120px;
+}
+.Featured-Developers {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.fd1,
+.fd2,
+.fd3,
+.fd4,
+.fd5,
+.fd6 {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  /* gap: 240px; */
+}
+.butget-container {
+  display: flex;
+  justify-content: center;
+}
+.butget {
+  background-color: #2d8cff;
+  padding: 12px 34px;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.mess-total {
+  border-top: 1px solid #282828;
+  padding-top: 61px;
+  margin-top: 220px;
+}
+.mess {
+  text-align: center;
+  line-height: 50px;
+}
+.content-menu {
+  color: #ffffff;
+}
+.img-enjoy {
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 120px;
+}
+.end-container {
+  display: flex;
+  justify-content: center;
+  border-top: 1px splid #282828;
+  margin-top: 51px;
+}
+
+.end {
+  border: 1px solid transparent;
+  background-color: #3775ed;
+  width: 1200px;
+  height: 300px;
+  text-align: center;
+  color: #ffffff;
+  line-height: 52px;
+  padding-top: 48px;
+}
+.conten-end {
+  font-size: 50px;
+}
+.conten-endp {
+  font-size: 22px;
+}
+.conten-endb {
+  font-size: 14px;
+  padding: 16px 60px;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.last {
+  display: flex;
+  border-top: 1px solid #282828;
+  padding: 120px 120px 0px 120px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 51px;
+  color: #ffffff;
+}
+@media screen and (max-width:360px) {
+  body{
+    background: red;
+  }
+
+  .logo {
+
+  }
+  .imglogo {
+    width: 360px;
+    height: 57px;
+  }
+  .header1 {
+  }
+  .nva {
+  }
+  .Join {
+  }
+  .hero-box {
+  }
+  .hero-title {
+    font-size: 35px;
+  }
+  .blue-text {
+  }
+  .hero-desc {
+  }
+  .hero-buttons {
+  }
+  .btn-left {
+  }
+  .btn-right {
+  }
+  .img21 {
+  }
+  .img2 {
+  }
+  .content-ar {
+  }
+  .content-ar1 {
+  }
+  .content-ar2 {
+  }
+  .aside-menu {
+  }
+  .aside-menu1 {
+  }
+  .aside-menu-logo {
+  }
+  .menu-logo1 {
+  }
+  .menu-logo2 {
+  }
+  .aside-menu-logo2 {
+  }
+  .gr49 {
+  }
+  .content-menu {
+  }
+  .aside-menu2 {
+  }
+  .gr50 {
+  }
+  .aside-menu3 {
+  }
+  .gr53 {
+  }
+  .imgjch {
+  }
+  .Featured-Developers {
+  }
+  .fd1 {
+  }
+  .fd2 {
+  }
+  .fd3 {
+  }
+  .fd4 {
+  }
+  .fd5 {
+  }
+  .fd6 {
+  }
+  .mess-total {
+  }
+  .butget-container {
+  }
+  .butget {
+  }
+  .mess {
+  }
+  .img-enjoy {
+  }
+  .end-container {
+  }
+  .end {
+  }
+  .conten-end {
+  }
+  .conten-endp {
+  }
+  .conten-endb {
+  }
+  .last {
+  }
+  .last1 {
+  }
+  .last2 {
+  }
+  .last3 {
+  }
+}
