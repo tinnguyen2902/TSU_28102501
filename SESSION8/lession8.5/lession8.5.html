@@ -4,19 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripGuide</title>
-    <link rel="stylesheet" href="lession8.5.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap"
-        rel="stylesheet">
+    <title>bang hoan thanh</title>
+    <link rel="stylesheet" href="./lession8.5.css">
 </head>
 
 <body>
     <header>
         <img src="/img/logo.png" alt="logo">
-        <div class="nav">
+        <div class="log">
             <p class="usa">USA</p>
             <img width="30px" class="flag-usa" src="/img/co usa.jpg" alt="flag-usa">
             <img width="30px" src="/img/icon_mess.jpeg" alt="">
@@ -27,88 +22,43 @@
             </div>
         </div>
     </header>
-    <main>
-        <nav class="menu">
-            <div>Home</div>
-            <div>&gt;</div>
-            <div>Hotel list</div>
-            <div>&gt;</div>
-            <div>Hotel details</details>
+    <div class="home">
+        <p>Home</p>
+        <p>></p>
+        <p>Hotel list</p>
+        <p>></p>
+        <p>Hotel details</p>
+        <p>></p>
+        <p class="conp">Confirm and pay</p>
+    </div>
+    <!-- phan than -->
+    <div class="container">
+        <div class="confirm-book">
+            <h1 class="box-h1">Confirm your Book</h1>
+            <h2 class="box-h2">Your tour</h2>
+            <div class="item">
+                <div>
+                    <p>Date</p>
+                    <p class="date-p">June 27-30,2020</p>
+                </div>
+                <img class="iconsua" src="/img/iconchinhsua.png" alt="sua">
             </div>
-            <div>&gt;</div>
-            <div class="cap">Confirm anh pay</div>
-        </nav>
-        <div class="tong">
-            <section class="abc">
-                <h1>Confirm your Book</h1>
-                <h2>Your tour</h2>
-                <div class="item">
-                    <div>
-                        <p>Date</p>
-                        <p>June 27-30,2020</p>
-                    </div>
-                    <img class="iconsua" src="/img/iconchinhsua.png" alt="sua">
+            <div class="item">
+                <div>
+                    <p>Traveller</p>
+                    <p class="date-p">1 Passenger</p>
                 </div>
-                <div class="item">
-                    <div>
-                        <p>Traveller</p>
-                        <p>1 Passenger</p>
-                    </div>
-                    <img class="iconsua" src="/img/iconchinhsua.png" alt="sua">
-                </div>
-            </section>
-            <aside>
-                <h4>Switzerland Hotels and Places to Stay</h4>
-                <div class="view">
-                    <p>⭐️ 4.8</p>
-                    <p class="data">(122 reviews)</p>
-                </div>
-                <img class="img-daniel" src="/img/daniel-corneschi-N6HTCyN50p0-unsplash 1.png" alt="">
-                <p class="room">1 bedroom + 1 private room</p>
-                <div class="check">
-                    <div class="check-in">
-                        <p>Check in</p>
-                        <p>June 27,2020</p>
-                    </div>
-                    <div class="check-out">
-                        <p>Check out</p>
-                        <p>June 30,2020</p>
-                    </div>
-
-                </div>
-                <div class="guest">
-                    <p>Guest</p>
-                    <p>2 guests</p>
-                </div>
-
-                <h2> Booked details</h2>
-                <div class="total">
-                    <p class="money">$119 + 5nights</p>
-                    <p>$833</p>
-                </div>
-                <div class="total">
-                    <p class="money">Ocupancy text and fee</p>
-                    <p>-$125</p>
-                </div>
-                <div class="total">
-                    <p class="money">Service free</p>
-                    <p>$103</p>
-                </div>
-                <div class="total" id="sum">
-                    <p>Total</p>
-                    <p>$833</p>
-                </div>
-                <p class="report">Report this property</p>
-            </aside>
+                <img class="iconsua" src="/img/iconchinhsua.png" alt="sua">
+            </div>
         </div>
-        <section>
+        <div class="payment">
             <img class="img-mayment" src="/img/mayment card.png" alt="">
             <div class="card">
                 <img class="card1" src="/img/card 1.png" alt="">
                 <img class="card1" src="/img/card 2.png" alt="">
             </div>
             <div class="number-card">
-                <p>Card Number</p>
+                <p class="number-card-p">Card Number</p>
                 <div class="card-number">
                     <p>5884 6241 4444 3333</p>
                     <img width="30em" src="/img/icon-tick.jpg" alt="">
@@ -127,58 +77,100 @@
                 <label for="Text">Save Card</label>
                 <br>
                 <button class="next">Confirm and reserve</button>
-            </section>
-
-
-
-
-        <article>
-            <img class="imgtarget" src="/img/bg.png" alt="">
-            <div class="text1">
-                <div class="content1">
-                    <h2 class="get">Get out pro offers</h2>
-                    <p>Create a visual identity for your company, and an overall brand</p>
+            </div>
+        </div>
+        <div class="book-detail">
+            <h4>Switzerland Hotels and Places to Stay</h4>
+            <div class="view">
+                <p>⭐️ 4.8</p>
+                <p class="data">(122 reviews)</p>
+            </div>
+            <img class="img-daniel" src="/img/daniel-corneschi-N6HTCyN50p0-unsplash 1.png" alt="">
+            <p class="room">1 bedroom + 1 private room</p>
+            <div class="check">
+                <div class="check-in">
+                    <p>Check in</p>
+                    <p>June 27,2020</p>
                 </div>
-                <div class="content2">
-                    <form class="email" action="#">
-                        <input id="input-email" type="text" placeholder="Type your email here">
-                    </form>
-                    <button class="sub">Subscribe</button>
+                <div class="check-out">
+                    <p>Check out</p>
+                    <p>June 30,2020</p>
                 </div>
             </div>
-        </article>
-    </main>
+            <div class="guest">
+                <p>Guest</p>
+                <p>2 guests</p>
+            </div>
+
+            <h2> Booked details</h2>
+            <div class="total">
+                <p class="money">$119 + 5nights</p>
+                <p>$833</p>
+            </div>
+            <div class="total">
+                <p class="money">Ocupancy text and fee</p>
+                <p>-$125</p>
+            </div>
+            <div class="total">
+                <p class="money">Service free</p>
+                <p>$103</p>
+            </div>
+            <div class="total" id="sum">
+                <p>Total</p>
+                <p>$833</p>
+            </div>
+            <p class="report">Report this property</p>
+        </div>
+    </div>
+    <!-- phan than 2: banner -->
+    <article>
+        <div class="text1">
+            <div class="content1">
+                <h2 class="get">Get out pro offers</h2>
+                <p class="content1-p">Create a visual identity for your company, and an overall brand</p>
+            </div>
+            <div class="content2">
+                <form class="email" action="#">
+                    <input id="input-email" type="text" placeholder="Type your email here">
+                </form>
+                <button class="sub">Subscribe</button>
+            </div>
+        </div>
+    </article>
+    <!-- phan cuoi -->
     <footer>
         <div class="logo101">
             <img src="/img/logo.png" alt="">
-            <p>This is the team that specializes in making sure in the find it a your interior looks cool</p>
+            <p class="footer-p p-an">This is the team that specializes in making sure in the find it a your interior looks
+                cool</p>
             <img class="setting" src="https://thumb.ac-illust.com/a4/a4436f565185205605a1fa77010fb92c_t.jpeg" alt="">
         </div>
         <div class="service">
             <h3>Services</h3>
-            <p>Travel Booking</p>
-            <p>Flight Booking</p>
-            <p>Car Booking</p>
-            <p>Fivestar Hotel</p>
-            <p>Traveling</p>
+            <p class="footer-p">Travel Booking</p>
+            <p class="footer-p">Flight Booking</p>
+            <p class="footer-p">Car Booking</p>
+            <p class="footer-p">Fivestar Hotel</p>
+            <p class="footer-p">Traveling</p>
         </div>
         <div class="support">
             <h3>Support</h3>
-            <p>Account</p>
-            <p>Legar</p>
-            <p>Contact</p>
-            <p>Terms & Condition</p>
-            <p>Privacy Policy</p>
+            <p class="footer-p">Account</p>
+            <p class="footer-p">Legar</p>
+            <p class="footer-p">Contact</p>
+            <p class="footer-p">Terms & Condition</p>
+            <p class="footer-p">Privacy Policy</p>
         </div>
         <div class="business">
             <h3>Business</h3>
-            <p>Success</p>
-            <p>About Locato</p>
-            <p>Blog</p>
-            <p>Information</p>
-            <p>Travel Guide</p>
+            <p class="footer-p">Success</p>
+            <p class="footer-p">About Locato</p>
+            <p class="footer-p">Blog</p>
+            <p class="footer-p">Information</p>
+            <p class="footer-p">Travel Guide</p>
         </div>
     </footer>
+
 </body>
 
 </html>
