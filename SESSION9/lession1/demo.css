@@ -6,7 +6,7 @@
 body {
   background: linear-gradient(#333333, #090707);
 }
-/* phan dau */
+/* phan dau ok */
 .intro {
   display: flex;
   justify-content: space-between;
@@ -34,13 +34,13 @@ body {
   padding: 10px 20px;
   margin: 20px;
 }
-/* phan than doan 1 */
+/* phan than doan 1 ok */
 .hero-box {
   margin-left: 70px;
   margin-right: 70px;
 }
 .hero-title {
-  margin-top: 181px;
+  margin-top: 150px;
   font-size: 65px;
   font-weight: 700;
   line-height: 1.2;
@@ -48,26 +48,21 @@ body {
   color: white;
   text-align: center;
 }
-
 .blue-text {
   color: #2d8cff;
 }
-
-/* Đoạn mô tả */
 .hero-desc {
   font-size: 18px;
   color: #ccc;
   margin-bottom: 40px;
   text-align: center;
 }
-
 /* Vùng chứa 2 nút */
 .hero-buttons {
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-
 /* Nút trái */
 .btn-left {
   background-color: #0d6efd;
@@ -78,7 +73,6 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-
 /* Nút phải */
 .btn-right {
   background-color: transparent;
@@ -90,54 +84,93 @@ body {
   cursor: pointer;
 }
 /* phan than 2 */
-.img21 {
+.twoBox {
   text-align: center;
-  margin-bottom: 172px;
+  margin-bottom: 150px;
 }
-.img2 {
+.twoBox--img {
   height: 400px;
   width: 800px;
   margin-top: 54px;
 }
 /* phan than 3 */
-.content-ar {
+.threeBox {
   text-align: center;
+  margin-bottom: 150px;
 }
-.content-ar1 {
+.threeBox--content1 {
   color: #ffffff;
   margin-bottom: 19px;
 }
-.content-ar2 {
+.threeBox--content2 {
   color: #ffffff;
 }
 /* phan than 4 */
-
-/* than 5 */
-.imgjch {
-  width: 800px;
-  height: 200px;
-  margin-top: 54px;
-  margin-left: 120px;
-}
-.Featured-Developers {
-  margin-left: 120px;
-  margin-right: 120px;
-}
-.fd1,
-.fd2,
-.fd3,
-.fd4,
-.fd5,
-.fd6 {
-  height: 300px;
-  width: 300px;
-  display: inline-block;
-  /* gap: 240px; */
-}
-/* than 6 */
-.butget-container {
+.fourBox {
   display: flex;
+  gap: 30px;
+  color: aliceblue;
+  align-items: center;
   justify-content: center;
+  margin: 50px 10%;
+}
+.fourBoxLeft {
+  background-color: #c96408;
+  border-radius: 10px;
+}
+.fourBoxLeft--menu1 {
+  position: relative;
+}
+.corner {
+  position: absolute;
+  width: 60px;
+  top: -50px;
+}
+.fourBoxLeft--menu1__logo1 {
+  left: -30px;
+  width: 100px;
+}
+.fourBoxLeft--menu1__logo2 {
+  right: -50px;
+  width: 100px;
+}
+.fourBoxLeft--menu1 {
+  right: 10px;
+}
+.fourBoxLeft--menu2 {
+  text-align: center;
+}
+.fourBoxLeft--menu2__content1 {
+  font-size: 30px;
+  line-height: 50px;
+}
+.fourBoxCenter {
+  background-color: #7937bb;
+  text-align: center;
+  border-radius: 10px;
+}
+.fourBoxCenter--div__content1,
+.fourBoxRight--content1 {
+  font-size: 30px;
+  line-height: 50px;
+}
+.fourBoxRight {
+  text-align: center;
+  border-radius: 10px;
+  background-color: #3775ed;
+}
+/* phan than 5 */
+.Box5--img {
+  text-align: center;
+  border-bottom: 1px solid #282828;
+}
+.Box5--img_small {
+  width: 80vw;
+}
+.butget-container {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #282828;
 }
 .butget {
   background-color: #2d8cff;
@@ -147,14 +180,13 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+/* phan than 6 */
 .mess-total {
-  border-top: 1px solid #282828;
-  padding-top: 61px;
-  margin-top: 220px;
+  margin-top: 50px;
 }
 .mess {
   text-align: center;
-  line-height: 50px;
+  line-height: 100px;
 }
 .content-menu {
   color: #ffffff;
@@ -163,19 +195,24 @@ body {
 .img-enjoy {
   text-align: center;
   margin-top: 150px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #282828;
+  padding-bottom: 100px;
+}
+.img--enjoy__size{
+  width: 80%;
 }
 .end-container {
-  display: flex;
-  justify-content: center;
-  border-top: 1px splid #282828;
-  margin-top: 51px;
+  width:80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  /* border-bottom: 1px solid #282828;
+  padding-bottom: 50px; */
 }
 
 .end {
   border: 1px solid transparent;
   background-color: #3775ed;
-  width: 1200px;
   height: 300px;
   text-align: center;
   color: #ffffff;
@@ -200,10 +237,9 @@ body {
 .last {
   display: flex;
   border-top: 1px solid #282828;
-  padding: 120px 120px 0px 120px;
+  padding: 20px 10% 10px 10%;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 51px;
   color: #ffffff;
 }
-

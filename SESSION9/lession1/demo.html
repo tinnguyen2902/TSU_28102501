@@ -4,83 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .aside-menu {
-            display: flex;
-            margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 80px;
-  gap: 23px;
-        }
-
-        .aside-menu1,
-        .aside-menu2,
-        .aside-menu3 {
-            border: 1px solid white;
-            margin: 20px;
-            line-height: 30px;
-            text-align: center;
-        }
-
-        .aside-menu1 {
-            background-color: #c96408;
-            padding: 20px;
-        }
-
-        .menu-logo1,
-        .menu-logo2 {
-            height: 64.16px;
-            width: 66.5px;
-        }
-
-        .menu-logo1 {
-            transform: translate(-75px, -25px);
-        }
-
-        .menu-logo2 {
-            transform: translate(75px, -25px);
-        }
-
-        .aside-menu2 {
-            background-color: #7937bb;
-            padding-top: 80px;
-        }
-
-        .aside-menu3 {
-            background-color: #3775ed;
-            padding-top: 80px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>demoht</title>
+    <link rel="stylesheet" href="demo.css">
 </head>
 
 <body>
-    <aside class="aside-menu">
-        <div class="aside-menu1">
-            <div class="aside-menu-logo">
-                <img class="menu-logo1" src="./img/logo2.png" alt="">
-                <img class="menu-logo2" src="./img/logo2.png" alt="">
+    <!-- phan dau ok -->
+    <header class="intro">
+        <img class="intro--logo" src="./img/logo.png" alt="logo">
+        <div class="intro--nva">
+            <div class="intro--nva__center">
+                <p>Features</p>
+                <p>Pricing</p>
+                <p>Learn</p>
             </div>
-            <div class="aside-menu-logo2">
-                <img class="gr49" src="./img/Group 49.png" alt="">
-                <h4 class="content-menu">E-commerce website</h4>
-                <p class="content-menu">Engage a developer to create a customized e-commerce site at low cost </p>
+            <div class="intro--nva__right">Join Clubwebers</div>
+        </div>
+    </header>
+    <!-- phan than 1 ok -->
+    <section class="hero-box">
+        <h1 class="hero-title"> Get a customized <span class="blue-text">website</span> for your business and brand.
+        </h1>
+        <p class="hero-desc"> You need a brand yes. You need a website. Get someone to create. Relax and Chill</p>
+        <div class="hero-buttons">
+            <button class="btn-left">Get started</button>
+            <button class="btn-right">Get featured</button>
+        </div>
+    </section>
+    <!-- phan than doan 2 ok -->
+    <div class="twoBox">
+        <img class="twoBox--img" src="./img/img1.jpg" alt="">
+    </div>
+    <!-- phan than doan 3 ok -->
+    <article class="threeBox">
+        <h2 class="threeBox--content1">Let us build a website with your ideas</h2>
+        <p class="threeBox--content2">Get website developers to create your marketing website and portfolio faster</p>
+    </article>
+    <!-- phan than doan 4 -->
+    <aside class="fourBox">
+        <!-- phan than doan 4 ben trai -->
+        <div class="fourBoxLeft">
+            <div class="fourBoxLeft--menu1">
+                <img class=" corner fourBoxLeft--menu1__logo1" src="./img/SI.png" alt="">
+                <img class=" corner fourBoxLeft--menu1__logo2" src="./img/SI.png" alt="">
+            </div>
+            <div class="fourBoxLeft--menu2">
+                <img class="fourBoxLeft--menu2__img" src="./img/Group 50.png" alt="">
+                <h4 class="fourBoxLeft--menu2__content1">E-commerce website</h4>
+                <p class="fourBoxLeft--menu1__content2">Engage a developer to create a customized e-commerce site at low
+                    cost </p>
             </div>
         </div>
-        <div class="aside-menu2">
-            <img class="gr50" src="img/Group 50.png" alt="">
-            <div>
-                <h4 class="content-menu">Portfolio website</h4>
-                <p class="content-menu">A portfolio website is a profile website by nature, so this is the place to get
+        <!-- phan than doan 4 giua -->
+        <div class="fourBoxCenter">
+            <img class="fourBoxCenter__img" src="./img/Group 49.png" alt="">
+            <div class="fourBoxCenter--div">
+                <h4 class="fourBoxCenter--div__content1">Portfolio website</h4>
+                <p class="fourBoxCenter--div__content2">A portfolio website is a profile website by nature, so this is
+                    the place to get
                     a deveoper</p>
             </div>
         </div>
-        <div class="aside-menu3">
-            <img class="gr53" src="./img/Group 53.png" alt="">
-            <h4 class="content-menu">Marketing website</h4>
-            <p class="content-menu">This is a website created with lot of marketing advantage. Do you have one?</p>
+        <!-- phan than doan 4 ben phai -->
+        <div class="fourBoxRight">
+            <img class="fourBoxRight--img" src="./img/Group 53.png" alt="">
+            <h4 class="fourBoxRight--content1">Marketing website</h4>
+            <p class="fourBoxRight--content2">This is a website created with lot of marketing advantage. Do you have
+                one?</p>
         </div>
     </aside>
+    <!-- phan than 5 -->
+    <div class="Box5--img">
+        <img class="Box5--img_small" src="./img/img2.png" alt="" srcset="">
+        <div />
+        <nav class="Featured-Developers">
+            <img class="fd1" src="./img/Featured Developers1.png" alt="">
+            <img class="fd2" src="./img/Featured Developers2.png" alt="">
+            <img class="fd3" src="./img/Featured Developers3.png" alt="">
+            <img class="fd4" src="./img/Featured Developers4.png" alt="">
+            <img class="fd5" src="./img/Featured Developers5.png" alt="">
+            <img class="fd6" src="./img/Featured Developers6.png" alt="">
+        </nav>
+        <div class="butget-container">
+            <button class="butget">Get featured</button>
+        </div>
+    </div>
+    <!-- phan than doan 6 -->
+    <section class="mess-total">
+        <div class="mess">
+            <h2 class="content-menu">Message from users</h2>
+            <p class="content-menu">Read what they say about clubweb, our users have the say</p>
+        </div>
+        <header class="mess">
+            <img src="./img/mess1.png" alt="">
+            <img src="./img/mess2.png" alt="">
+            <img src="./img/mess3.png" alt="">
+            <img src="./img/mess4.png" alt="">
+            <img src="./img/mess5.png" alt="">
+            <img src="./img/mess6.png" alt="">
+            <img src="./img/mess7.png" alt="">
+            <img src="./img/mess8.png" alt="">
+            <img src="./img/mess9.png" alt="">
+        </header>
+    </section>
+    <!-- phan than doan 7 -->
+    <div class="img-enjoy">
+        <img class="img--enjoy__size" src="./img/img4.png" alt="">
+    </div>
+    <div class="end-container">
+        <div class="end">
+            <h2 class="conten-end">Do you want to be a clubweber?</h2>
+            <p class="conten-endp">Be part of an exciting community of website developers</p>
+            <button class="conten-endb">Join clubweb</button>
+        </div>
+    </div>
+    <!-- phan ket -->
+    <footer class="last">
+        <div class="last1">Privacy policy</div>
+        <div class="last2">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div class="last3">Clubwebs</div>
+    </footer>
 </body>
 
 </html>
