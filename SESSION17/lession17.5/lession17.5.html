@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./lession17.5.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1 class="title">ELEGANT LOGIN FORM</h1>
+      <div class="container">
+        <h2 class="btn-login">LOG IN</h2>
+        <form onsubmit="handleSubmit(event)">
+          <div class="btn-button">
+            <input type="text" class="btn-button-email" placeholder="Email" />
+            <p class="error" id="email-error">Email chua nhap</p>
+            <input
+              type="password"
+              class="btn-button-password"
+              placeholder="Password"
+            />
+            <p class="error" id="password-error">Password chua nhap</p>
+            <button class="btn-button-sub">Submit</button>
+          </div>
+          <h2 class="or">OR</h2>
+          <div class="brands">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+          </div>
+          <div class="btn-sign-up">
+            <p>No account yet?</p>
+            <a href="#" class="sign-up">Signup</a>
+          </div>
+          <a href="#" class="forgot">Forgot your password</a>
+        </form>
+      </div>
+      <p class="design">&copy; 2025 Elegant login form</p>
+    </div>
+    <script src="./lession17.5.js"></script>
+  </body>
+</html>

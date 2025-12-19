@@ -1,0 +1,20 @@
+.fix {
+  display: flex;
+  gap: 10px;
+}
+.item {
+  width: 150px;
+  height: 150px;
+  border: 2px, solid;
+  text-align: center;
+}
+.item:nth-child(1) {
+  background-color: yellow;
+}
+.item:nth-child(2) {
+  background-color: green;
+}
+.item:nth-child(3) {
+  background-color: gray;
+}
+/* thay vi moi the div mot ten class laf item1,item2,.. thi de co the dung chung class item thi dung :nth-child(roi them so 1,2,3..) vao sau cung */

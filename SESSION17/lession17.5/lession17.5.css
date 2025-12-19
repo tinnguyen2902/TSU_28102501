@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20231002/pngtree-illustration-of-a-3d-render-showcasing-a-concept-of-web-ui-image_13584942.png);
+  background-size: cover; 
+  height: 100vh; 
+  background-position: center;
+  /* background-image: none; neu muon xoa anh */
+  background-repeat:no-repeat;
+  line-height: 50px;
+  text-align: center;
+}
+.title{
+  color: aqua;
+  padding: 50px;
+}
+.container{
+  background-color: aqua;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-top: 30%;
+}
+.btn-login{
+  background-color: rgba(37, 138, 221, 0.494);
+  color: white;
+}
+.btn-button{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn-button-email {
+  margin: 30px 10px 20px 10px;
+  padding: 7px;
+}
+.btn-button-password {
+  padding: 7px;
+  margin: 0px 10px 20px 10px;
+}
+.btn-button-sub {
+  padding: 7px;
+  margin: 0px 10px 20px 10px;
+  color: aqua;
+  background-color: rgb(194, 88, 88);
+}
+.or {
+  color: rgb(163, 163, 208);
+}
+.brands{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.btn-sign-up{
+  display: flex;
+  justify-content: center;
+}
+.sign-up, .forgot {
+  text-decoration: none;
+}
+.design{
+  color: aqua;
+}
+.error {
+  color: red;
+  display: none;
+} 

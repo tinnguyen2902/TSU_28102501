@@ -1,0 +1,27 @@
+/* phu toan bo man hinh */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: aliceblue;
+}
+/* can giua  */
+.modal {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 4px;
+  min-width: 300px;
+}
+.modal-body {
+  position: relative;
+}
+/* nut close */
+.btn-close {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
