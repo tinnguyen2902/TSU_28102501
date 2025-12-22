@@ -17,14 +17,21 @@
         <h2 class="btn-login">LOG IN</h2>
         <form onsubmit="handleSubmit(event)">
           <div class="btn-button">
-            <input type="text" class="btn-button-email" placeholder="Email" />
+            <input
+              type="text"
+              class="btn-button-email"
+              id="email-input"
+              placeholder="Email"
+            />
             <p class="error" id="email-error">Email chua nhap</p>
+
             <input
               type="password"
               class="btn-button-password"
+              id="password-input"
               placeholder="Password"
-            />
-            <p class="error" id="password-error">Password chua nhap</p>
+            />     
+              <p class="error" id="password-error">Password chua nhap</p>
             <button class="btn-button-sub">Submit</button>
           </div>
           <h2 class="or">OR</h2>

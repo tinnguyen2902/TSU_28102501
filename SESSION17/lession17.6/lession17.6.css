@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.btn{
+    margin: 50px;
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+}
+.text{
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+}
+
+.operation {
+    margin : 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.btn-button{
+    background-color: rgba(210, 192, 167, 0.343);
+}
+.button, .buttonC{
+    width:55px;
+    height: 30px;
+}    
+.number-equal {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    gap: 10px;
+
+}
+.number {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+} 
+.buttonEqual {
+    width: 55px;
+    height: 150px;
+    background-color: rgba(110, 110, 225, 0.605);
+    color: white;
+}
