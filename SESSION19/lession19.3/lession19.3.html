@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./lession19.3.css" />
+  </head>
+  <body>
+    <form id="login-form">
+      <h1>Login</h1>
+      <div id="email">
+        <p class="email-p">Email:</p>
+        <input
+          id="email-in"
+          class="email-in"
+          type="email"
+          placeholder="Enter your email address"
+        />
+        <p id="email-err" class="err">Email khong duoc de trong</p>
+      </div>
+      <div id="pass">
+        <p class="pass-p">Password:</p>
+        <div class="pass-icon">
+          <input
+            id="pass-in"
+            class="pass-in"
+            type="password"
+            placeholder="Enter your password"
+          />
+          <button type="button" id="pass-icon"><i class="fa-solid fa-eye"></i></button>
+        </div>
+        <p id="pass-err" class="err">Password khong duoc de trong</p>
+      </div>
+      <div class="remember">
+        <input id="remember-check" type="checkbox">
+        <label for="remember-check">Remember</label>
+        <!-- label giúp vùng kích vào là ô cộng vs chữ giúp dể dùng hơn p -->
+      </div>
+      <p id="formErr" class="err"></p>
+      <p id="formSuccess" class="success"></p>
+      <button type="submit" class="login" id="login-button">Login</button>
+      <footer>
+        <a href="">Forgot password</a>
+        <p>or</p>
+        <a href="">SignUp</a>
+      </footer>
+    </form>
+
+    <script src="./lession19.3.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+  line-height: 30px;
+}
+#email-err, #password-err, #confirmPass-err {
+    display: none;
+}
+.nav-email, .nav-px-p, .nav-confirm-p {
+    color: rgb(94, 156, 135);
+}
+.nav-input, .nav-pw-input, .nav-confirm-input {
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border-color: rgba(144, 176, 205, 0.55);
+}
+.button {
+    background-color: rgb(133, 133, 237);
+    color: white;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+}

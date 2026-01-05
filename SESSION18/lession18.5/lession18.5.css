@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-left: 20%;  
+    margin-top: 40px;
+}
+h1 {
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+.body {
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+
+}
+.body-name, .body-age, .body-class, .body-button {
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgba(103, 204, 204, 0.368);
+    
+}
+
+.body-button {
+    background-color: rgb(140, 140, 230);
+    color: white;
+    border: none;
+}
+.search {
+    width: 50%;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgba(103, 204, 204, 0.368);
+    margin-bottom: 20px;
+}
+table {
+    width: 70%;
+    text-align: center;
+    border-collapse: collapse;  
+}    
+tr {
+  border-bottom: 1px solid rgba(103, 204, 204, 0.368);
+}
+.button{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+
+}
+.fix {
+    background-color: rgb(228, 121, 39) ;
+}
+.del {
+    background-color: red;
+}

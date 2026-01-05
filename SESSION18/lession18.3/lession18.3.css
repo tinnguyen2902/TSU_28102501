@@ -1,0 +1,38 @@
+body {
+  margin-left: 30%;
+  margin-top: 10%;
+  margin-right: 30%;
+}
+header {
+  background-color: orangered;
+  width: 100%;
+  text-align: center;
+}
+.header-h1 {
+  color: white;
+  padding: 40px 40px 0 40px;
+}
+.header-div {
+  display: flex;
+  padding-bottom: 20px;
+}
+.header-div-input {
+  width: 60%;
+  margin-left: 10%;
+  font-size: 20px;
+  border: none;
+}
+.header-div-button {
+  border: none;
+  background-color: rgb(173, 197, 189);
+  width: 20%;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+li {
+  list-style: none;
+  font-size: 20px;
+}

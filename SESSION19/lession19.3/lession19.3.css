@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+form {
+  margin: 10% 40%;
+  width: 250px;
+}
+h1 {
+  padding-left: 10%;
+}
+input {
+  height: 30px;
+  width: 250px;
+}
+.email-p,
+.pass-p {
+  color: rgb(17, 79, 79);
+  padding: 10px 0px;
+}
+#email-err,
+#pass-err {
+  display: none;
+  color: red;
+}
+.login {
+  height: 30px;
+  width: 250px;
+  margin: 20px 0px 0px;
+  background-color: rgba(78, 78, 187, 0.564);
+  border: none;
+  border-radius: 5px;
+  color: aliceblue;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+}
+.pass-icon {
+  display: flex;
+}
+#pass-icon {
+  margin-left: -20px;
+  border: none;
+  background-color: white;
+  height: 0px;
+  width: 0;
+  padding-top: 7px;
+}
+.remember {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 7px;  
+}
+#remember-check {
+    width: 15px;
+    height: 15px;
+}

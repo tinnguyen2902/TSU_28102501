@@ -1,0 +1,30 @@
+body{
+    border: 1px solid;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+.text-button{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 5px
+}
+.total{
+    padding: 10px;
+    background-color: rgba(217, 239, 239, 0.469);
+}
+#input-text{
+    width: 99.3%;
+    height: 50px;
+}
+.button {
+    background-color: #6c5ce7;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+}
+.button-del{
+    background-color: #d63031;
+    color: white;
+    border-radius: 10px;
+}

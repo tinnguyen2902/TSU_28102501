@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lession19.1</title>
+    <link rel="stylesheet" href="./lession19.1.css" />
+  </head>
+  <body>
+    <form id="resisterForm">
+      <h1>Resister</h1>
+      <nav class="nav">
+        <div class="nay-em">
+          <p class="nav-email">Email:</p>
+          <input id = "email"
+            class="nav-input"
+            type="text"
+            placeholder="Enter your email address"
+          />
+          <p id="email-err">Email không được để trống</p>
+        </div>
+        <div class="nav-pw">
+          <p class="nav-px-p">Password:</p>
+          <input id="password"
+            class="nav-pw-input"
+            type="password"
+            placeholder="Enter your password"
+          />
+          <p id="password-err">Password không được để trống</p>
+        </div>
+        <div class="nav-confirm">
+          <p class="nav-confirm-p">Confirm Password</p>
+          <input id="confirmPass"
+            class="nav-confirm-input"
+            type="password"
+            placeholder="Enter your comfirm password"
+          />
+          <p id = "confirmPass-err">Password không được để trống</p>
+        </div>
+      </nav>
+      <button class="button" type="submit">Register</button>
+    </form>
+    <script src="./lession19.1.js"></script>
+  </body>
+</html>
