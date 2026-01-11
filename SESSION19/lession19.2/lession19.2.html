@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lession19.2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./lession19.2.css" />
   </head>
   <body>
     <form action="" id="manager">
       <h1>Tast Management</h1>
-      <div>
+      <div class="body">
         <input type="text" name="" id="content" placeholder="Content" />
         <input type="date" id="date" />
-        <input type="text" id="status" />
+        <div class="status-icon">
+          <input type="text" id="status" placeholder="Choose status" readonly />
+          <i class="fa-solid fa-angle-down" id="icon"></i>
+          <div id="status-options" class="options-container"></div>
+        </div>
         <input type="text" id="name" placeholder="Username" />
         <button id="button">Submit</button>
       </div>

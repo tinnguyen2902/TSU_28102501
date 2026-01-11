@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng kí</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/register.css" />
   </head>
   <body>
@@ -15,28 +19,37 @@
         <div class="name-container">
           <div class="nav-name">
             <p class="nav-name-text">Họ và tên đệm</p>
-            <input class="nav-name-input input-nav " type="text" />
+            <input
+              id="firstName"
+              class="nav-name-input input-nav"
+              type="text"
+            />
           </div>
           <div class="nav-name">
             <p class="nav-name-text">Tên</p>
-            <input class="nav-name-input input-nav" type="text" />
+            <input id="lastName" class="nav-name-input input-nav" type="text" />
           </div>
         </div>
         <div class="nav-email">
           <p class="nav-email-text">Email</p>
           <input
+            id="email"
             class="nav-email-input input-nav"
-            type="text"
+            type="email"
             placeholder="you@company.com"
           />
         </div>
         <div class="nav-pass">
           <p class="nav-pass-text">Mật khẩu</p>
-          <input class="nav-pass-input input-nav" type="password" />
+          <input id="pass" class="nav-pass-input input-nav" type="password" />
         </div>
         <div class="nav-confirm">
           <p class="nav-confirm-text">Xác nhận mật khẩu</p>
-          <input class="nav-confirm-input input-nav " type="password" />
+          <input
+            id="confirmPass"
+            class="nav-confirm-input input-nav"
+            type="password"
+          />
         </div>
         <div class="nav-check">
           <input class="nav-check-box" type="checkbox" />
@@ -52,5 +65,6 @@
         </div>
       </nav>
     </header>
+    <script src="../js/register.js"></script>
   </body>
 </html>

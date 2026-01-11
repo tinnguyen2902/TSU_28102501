@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+  background-color: #f0f2f5;
+}
+
+/* --- 2. SIDEBAR (HOME) --- */
+.home {
+  width: 240px;
+  background-color: #f6f8f9;
+  padding: 10px;
+  height: 100vh;
+  border-right: 1px solid #e5e9eb;
+}
+
+.home--logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  padding: 14px;
+}
+
+.home--logo__img {
+  width: 24px;
+  height: 24px;
+}
+
+.home--menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home--item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #475467;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.home--item:hover,
+.home--item2 {
+  background-color: #e5e9eb;
+  color: #4094f7;
+}
+
+/* --- 3. MAIN CONTENT (MANAGER) --- */
+.manager {
+  flex: 1;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.manager--icon {
+  height: 56px;
+  border-bottom: 1px solid #e5e9eb;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.manager-avt {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: 12px;
+}
+
+.manager-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px;
+}
+
+.manager--text--button {
+  background-color: #4094f7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* --- 4. BỘ LỌC & TÌM KIẾM --- */
+.manager--search {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin: 0 24px 24px;
+}
+
+.manager--search--status,
+.manager--search--select {
+  position: relative;
+}
+
+.manager--search--statusIn,
+.manager--search--selectIn {
+  height: 40px;
+  width: 260px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0 35px 0 12px;
+  outline: none;
+}
+
+.manager--search--status i,
+.manager--search--select i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+/* --- 5. BẢNG DỮ LIỆU --- */
+.manager--table {
+  width: calc(100% - 48px);
+  margin: 0 24px 24px;
+  border-collapse: collapse;
+}
+
+.table-th {
+  background-color: #eaecf0;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e9eb;
+  font-size: 14px;
+}
+
+.icon-button {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #667085;
+}
+
+.icon-button button:hover {
+  color: #4094f7;
+}
+
+/* --- 6. PHÂN TRANG --- */
+.manager--button {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.button-text {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d8dae5;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* --- 7. MODALS & OVERLAY (HỆ THỐNG LỚP PHỦ) --- */
+
+/* Lớp phủ chính cho Form */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Lớp 1 */
+}
+
+.form {
+  width: 600px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+}
+.btn-close {
+  width: 40px;
+  border: none;
+  background-color: white;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fomr-input {
+  height: 44px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+}
+
+.status {
+  display: flex;
+  gap: 40px;
+}
+.active,
+.inactive {
+  display: flex;
+}
+.form-footer {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+.btn-cancel {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #dde4ed;
+}
+.btn-submit {
+  width: 50px;
+  height: 30px;
+  background-color: #609ce1;
+  border: none;
+  border-radius: 5px;
+}
+.error-message {
+  color: #ff4d4f;
+  font-size: 12px;
+  height: 16px;
+}
+
+/* Modal Xác nhận xóa (Nổi bật hơn) */
+.modal-confirm {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000; /* Lớp 2 - Trên Form */
+}
+
+.modal-confirm-content {
+  background: #fff;
+  width: 600px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.icon-warning {
+  font-size: 20px;
+  color: #f97066;
+  margin-bottom: 16px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.btn-huya {
+  background: #fff;
+  border: 1px solid #d0d5dd;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-xoaa {
+  background: #f97066;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* --- THÔNG BÁO DEL --- */
+.toast-notification {
+  position: fixed;
+  top: 20px;
+  right: 24px;
+  background-color: #1e293b;
+  color: #fff;
+  width: 320px;
+  padding: 16px;
+  border-radius: 8px;
+  z-index: 9999; /* Lớp cao nhất - Luôn trên cùng */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  animation: slideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.toast-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4px;
+}
+
+.icon-success {
+  color: #4ade80;
+  font-size: 20px;
+}
+
+.toast-title {
+  font-weight: 600;
+  flex: 1;
+}
+
+.btn-close-toast {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.toast-body {
+  font-size: 14px;
+  padding-left: 32px;
+  color: #cbd5e1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

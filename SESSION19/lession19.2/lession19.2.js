@@ -15,7 +15,7 @@ const courses = [
     assignedTo: "Lam",
   },
   {
-    id: 1,
+    id: 3,
     content: "Learn CSS session 01",
     dueDate: "2023-04-16",
     status: "Pending",
@@ -27,60 +27,155 @@ const courses = [
 let form = document.getElementById("manager");
 let content = document.getElementById("content");
 let date = document.getElementById("date");
-let status = document.getElementById("status");
 let username = document.getElementById("name");
 let button = document.getElementById("button");
-//---Tao id
+let table = document.getElementById("table");
+let statusInput = document.getElementById("status");
+let icon = document.getElementById("icon");
+let optionsContainer = document.getElementById("status-options");
+
+//---Biến quản lý
+let editId = null;
 let currentID = Math.max(...courses.map((t) => t.id));
-//---tao table
-const table = document.getElementById("table");
-const tr = document.createElement("tr");
-const th1 = document.createElement("th");
-th1.textContent = "No";
-const th2 = document.createElement("th");
-th2.textContent = "Content";
-const th3 = document.createElement("th");
-th3.textContent = "Due Date";
-const th4 = document.createElement("th");
-th4.textContent = "Status";
-const th5 = document.createElement("th");
-th5.textContent = "Sddigned to";
-const th6 = document.createElement("th");
-th6.textContent = "Action";
-table.appendChild(th1);
-table.appendChild(th2);
-table.appendChild(th3);
-table.appendChild(th4);
-table.appendChild(th5);
-table.appendChild(th6);
-courses.forEach((item) => {
+
+// VẼ NGANG TITLE
+function renderInitialTable() {
+  table.innerHTML = `
+  <tr><th>No</th>
+  <th>Content</th>
+  <th>Due Date</th>
+  <th>Status</th>
+  <th>Assigned to</th>
+  <th>Action</th></tr>`;
+  //for (let i=0;i<courses.length;i++)
+  //let item = courses[i]. doan nay bang voi vong lap forEach duoi
+  courses.forEach((item) => {
+    renderNewRow(item);
+  });
+}
+//HÀM VẼ DÒNG NGANG
+function renderNewRow(item) {
   const tr = document.createElement("tr");
-  const tdNo = document.createElement("td");
-  tdNo.textContent = item.id;
-  const tdContent = document.createElement("td");
-  tdContent.textContent = item.content;
-  const tdDate = document.createElement("td");
-  tdDate.textContent = item.dueDate;
-  const tdStatus = document.createElement("td");
-  tdStatus.textContent = item.status;
-  const tdAssignedTo = document.createElement("td");
-  tdAssignedTo.textContent = item.assignedTo;
-
-  const tdAction = document.createElement("td");
-  const btnEdit = document.createElement("button");
-  btnEdit.textContent = "Sửa";
-  const btnDel = document.createElement("button");
-  btnDel.textContent = "Xóa";
-  tdAction.appendChild(btnEdit);
-  tdAction.appendChild(btnDel);
-
-  tr.appendChild(tdNo);
-  tr.appendChild(tdContent);
-  tr.appendChild(tdDate);
-  tr.appendChild(tdStatus);
-  tr.appendChild(tdAssignedTo);
-  tr.appendChild(tdAction);
-  //chú ý ở đây vị trí các tdNo, tdContent... phải theo thứ tự
-  
+  tr.innerHTML = `
+    <td>${item.id}</td>
+    <td>${item.content}</td>
+    <td>${item.dueDate}</td>
+    <td>${item.status}</td>
+    <td>${item.assignedTo}</td>
+    <td>
+      <button type="button" onclick="handleEdit(${item.id})">Sửa</button>
+      <button type="button" onclick="handleDel(${item.id})">Xoá</button>
+    </td>`;
   table.appendChild(tr);
+}
+// CHỌN STATUS (Phải nằm ngoài hàm addNew)
+icon.addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (optionsContainer.innerHTML !== "") {
+    optionsContainer.innerHTML = "";
+    return;
+  }
+  const statuses = ["Pending", "Waiting", "In progress"];
+  statuses.forEach((text) => {
+    const p = document.createElement("p");
+    p.textContent = text;
+    p.addEventListener("click", function () {
+      statusInput.value = this.textContent;
+      optionsContainer.innerHTML = "";
+    });
+    optionsContainer.appendChild(p);
+  });
 });
+
+document.addEventListener("click", () => {
+  optionsContainer.innerHTML = "";
+});
+
+//HÀM HỖ TRỢ ĐỔI DỮ LIỆU KHI SỬA
+function handleEdit(id) {
+  const item = courses.find((c) => c.id === id);
+  if (item) {
+    content.value = item.content;
+    date.value = item.dueDate;
+    statusInput.value = item.status;
+    username.value = item.assignedTo;
+    editId = id;
+    button.textContent = "Cập nhật";
+  }
+}
+
+//CHỨC NĂNG CHÍNH: THÊM VÀ SỬA
+function addNew(e) {
+  if (e) e.preventDefault();
+
+  const newContent = content.value.trim();
+  const newDate = date.value;
+  const newStatus = statusInput.value;
+  const newUsername = username.value.trim();
+
+  if (
+    newContent === "" ||
+    newDate === "" ||
+    newStatus === "" ||
+    newUsername === ""
+  ) {
+    alert("Vui lòng nhập đầy đủ thông tin");
+    return;
+  }
+
+  if (editId !== null) {
+    // TRƯỜNG HỢP SỬA
+    const index = courses.findIndex((s) => s.id === editId);
+    if (index !== -1) {
+      courses[index] = {
+        id: editId,
+        content: newContent,
+        dueDate: newDate,
+        status: newStatus,
+        assignedTo: newUsername,
+      };
+      alert("Cập nhật thành công");
+
+      // Vẽ lại bảng mới
+      renderInitialTable();
+
+      // Reset trạng thái
+      editId = null;
+      button.textContent = "Submit";
+      form.reset();
+    }
+  } else {
+    // TRƯỜNG HỢP THÊM MỚI
+    //GIẢ SỬ: currentID = 1
+    // current++ = 2
+    // ++current = 2
+    const newId = ++currentID;
+    const newCourseObj = {
+      id: newId,
+      content: newContent,
+      dueDate: newDate,
+      status: newStatus,
+      assignedTo: newUsername,
+    };
+    courses.push(newCourseObj);
+    renderNewRow(newCourseObj);
+    alert("Thêm thành công");
+    form.reset();
+  }
+}
+//---Gán sự kiện và chạy bảng
+form.addEventListener("submit", addNew);
+renderInitialTable();
+//chuc nang xoa
+function handleDel(id) {
+  //xac nhan
+  let isComfirm = confirm("xác nhận xóa nội dung này không?");
+  if (isComfirm){
+    let index = courses.findIndex((s)=>s.id === id);
+    if (index !== -1){
+      courses.splice(index,1);
+      renderInitialTable();
+      alert("xóa thành công");
+    }
+  }
+}

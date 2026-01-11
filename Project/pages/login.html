@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Đăng nhập</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/login.css">
 </head>
@@ -12,33 +16,42 @@
     <div class="login-container">
         <form class="form">
             <header class="form-header">
-                <h3 class="title">Đăng Nhập</h3>
+                <h3 class="title">Đăng nhập</h3>
                 <p class="description">Đăng nhập tài khoản để sử dụng hệ thống quản lý</p>
             </header>
             <main class="form-body">
                 <div class="form-group">
                     <label class="form-label" for=""><b>Email</b></label>
-                    <input class="form-input" type="text">
+                    <input id="emailInput" class="form-input" type="text">
                 </div>
                 <div class="form-group group">
                     <label class="form-label" for=""><b>Mật khẩu</b></label>
-                    <input class="form-input" type="text">
+                    <input id="passInput" class="form-input" type="password">
                 </div>
                 <div class="button">
                 <div class="button-pass">
                     <input class="button-checkbox"  type="checkbox">
                     <span class="button-save">Nhớ tài khoản</span>
                 </div>
+                
                 <div class="button-forget">
                     <a class="button-forget-pass" href="">Quên mật khẩu</a>
                 </div>
                 </div>
+                <div class="button-pass-mobile">
+                    <input type="checkbox">
+                    <p>Bạn đồng ý với <a href="">chính sách và điều khoản.</a></p>
+                </div>
             </main>
             <footer class="form-footer">
                 <button class="form-button">Đăng nhập</button>
-                <p class="form-account"><span class="form-account-text">Bạn chưa có tài khoản?  <a class="form-account-register" href="./register.html"><b>Đăng kí</b></a></span></p>
+                <div class="users">
+                    <p class="users-p">Bạn chưa có tài khoản?</p>
+                    <a class="users-link" href="./register.html">Đăng ký</a>
+                </div>
             </footer>
         </form>
     </div>
+    <script src="../js/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    background-color: #8c8cdd;
+}
+form {
+  background-color: rgb(177, 212, 228);
+  margin: 20vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  gap: 10px;
+}
+.add{
+    display: flex;
+    gap: 10px;
+}
+.input {
+    height: 40px;
+    width: 200px;  
+}
+.button-add{
+    height: 40px;
+    width: 40px;
+}
+.clear{
+    display: flex;
+    gap: 10px;
+}
+.clear-text{
+    display: flex;
+    align-items: center;
+}
+.button-clear{
+    height: 40px;
+    width: 80px;
+}

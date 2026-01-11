@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang thống kê</title>
-</head>
-<body>
-    <h1>Trang thống kê</h1>
-</body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/category-manager.css">
+  </head>
+  <body>
+    <!-- <h1>Trang thống kê</h1> -->
+    <header class="home">
+      <div class="home--logo">
+        <img
+          class="home--logo__img"
+          src="../utils/img/product-manager/logo-ecommerce.png"
+          alt=""
+        />
+        <b class="home--logo__p">Ecommerce</b>
+      </div>
+      <div class="home--menu">
+        <a href="./dashboard.html" class="home--item home--item1">
+          <i class="fa-solid fa-house"></i>
+          <p class="home--item1-p">Thống kê</p>
+        </a>
+        <a href="./category-manager.html" class="home--item">
+          <i class="fa-regular fa-address-book"></i>
+          <p class="home--item2-p">Danh mục</p>
+        </a>
+        <a href="./product-manager.html" class="home--item">
+          <i class="fa-regular fa-folder"></i>
+          <p class="home--item3-p">Sản phẩm</p>
+        </a>
+      </div>
+    </header>
+    <section class="manager">
+      <div class="manager--icon">
+        <i class="fa-solid fa-bell"></i>
+        <img
+          class="manager-avt"
+          src="../utils/img/product-manager/avt.png"
+          alt=""
+        />
+      </div>
+      <div class="manager-logout">
+        <button id="logOut" ondblclick="logOut"
+        class="manager-button">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          Log out
+        </button>
+      </div>
+      <div class="manager-text">
+        <b class="manager-text-b">Thống kê</b>
+      </div>
+    </section>
+    <script src="../js/dashboard.js"></script>
+  </body>
 </html>

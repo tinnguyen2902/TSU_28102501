@@ -1,11 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Trang quan ly danh muc</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang thống kê</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/category-manager.css">
+  </head>
+  <body>
+    <!-- <h1>Trang quản lý sp</h1> -->
+    <header class="home">
+      <div class="home--logo">
+        <img
+          class="home--logo__img"
+          src="../utils/img/product-manager/logo-ecommerce.png"
+          alt=""
+        />
+        <b class="home--logo__p">Ecommerce</b>
+      </div>
+      <div class="home--menu">
+        <a href="dashboard.html" class="home--item home--item1">
+          <i class="fa-solid fa-house"></i>
+          <p class="home--item1-p">Thống kê</p>
+        </a>
+        <a href="./category-manager.html" class="home--item home--item2">
+          <i class="fa-regular fa-address-book"></i>
+          <p class="home--item2-p">Danh mục</p>
+        </a>
+        <a href="./product-manager.html" class="home--item">
+          <i class="fa-regular fa-folder"></i>
+          <p class="home--item3-p">Sản phẩm</p>
+        </a>
+      </div>
+    </header>
+    <section class="manager">
+      <div class="manager--icon">
+        <i class="fa-solid fa-bell"></i>
+        <img
+          class="manager-avt"
+          src="../utils/img/product-manager/avt.png"
+          alt=""
+        />
+      </div>
+      <div class="manager-text">
+        <b class="manager-text-b">Danh mục</b>
+        <button id="addNew" class="manager--text--button" type="button">
+          Thêm danh mục mới
+        </button>
+      </div>
+       <div class="manager--search">
+            <div class="manager--search--status">
+                <select id="search-status" class="manager--search--statusIn">
+                    <option value="">Tất cả trạng thái</option>
+                    <option value="Đang hoạt động">Đang hoạt động</option>
+                    <option value="Ngừng hoạt động">Ngừng hoạt động</option>
+                </select>
+            </div>
+            <div class="manager--search--select">
+                <input id="search-name" class="manager--search--selectIn" type="text" placeholder="Tìm kiếm danh mục theo tên" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+         <table class="manager--table">
+            <thead>
+                <tr class="table-th">
+                    <th>Mã danh mục</th>
+                    <th>Tên danh mục</th>
+                    <th>Trạng thái</th>
+                    <th>Chức năng</th>
+                </tr>
+            </thead>
+            <tbody id="product-list"></tbody>
+        </table>
+        <!-- phần ô thông bao thêm sửa -->
+         <div class="overlay" style="display:none " id="main-overlay">
+            <form id="category-form" class="form" onsubmit="handleSubmit(event)">
+                <div class="form-header">
+                    <h3 class="form-title">Thêm mới danh mục</h3>
+                    <button onclick="handleCloseModal()" type="button" class="btn-close">X</button>
+                </div>
+                <div class="form-body">
+                    <div class="form-group">
+                        <label class="form-label">Mã danh mục</label>
+                        <input id="category-code" class="fomr-input" type="text" />
+                        <small id="code-error" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Tên danh mục</label>
+                        <input id="category-name" class="fomr-input" type="text" />
+                        <small id="name-error" class="error-message"></small>
+                    </div>
+                    <div class="form-status">
+                        <label class="form-label">Trạng thái</label>
+                        <div class="status">
+                            <div class="active">
+                                <input id="active-opt" checked name="status" type="radio" />
+                                <p>Đang hoạt động</p>
+                            </div>
+                            <div class="inactive">
+                                <input id="inactive-opt" name="status" type="radio" />
+                                <p>Ngừng hoạt động</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-footer">
+                    <button type="button" onclick="handleCloseModal()" class="btn btn-cancel">Hủy</button>
+                    <button type="submit" class="btn btn-submit">Lưu</button>
+                </div>
+            </form>
+        </div>
+        <!-- phần ô thông báo xoá -->
+         <div id="modal-delete" class="modal-confirm" style="display:none ">
+            <div class="modal-confirm-content">
+                <i class="fa-solid fa-circle-exclamation icon-warning"></i>
+                <b class="modal-title">Xác nhận</b>
+                <p class="modal-text">Bạn chắc chắn xoá sản phẩm <span id="del-name" style="font-weight: bold">... </span>khỏi hệ thống ?</p>
+                <div class="modal-actions">
+                    <button type="button" class="btn-huya" onclick="closeDeleteModal()">Huỷ</button>
+                    <button type="button" class="btn-xoaa" onclick="confirmDelete()">Xoá</button>
+                </div>
+            </div>
+        </div>
+      <!-- phần thông báo xoá thành công -->
+       <div id="toast-success" class="toast-notification" style="display: none">
+            <div class="toast-header">
+                <i class="fa-regular fa-circle-check icon-success"></i>
+                <span class="toast-title">Thành công</span>
+                <i class="fa-solid fa-xmark btn-close-toast" onclick="closeToast()"></i>
+            </div>
+            <p class="toast-body">Thao tác thành công!</p>
+        </div>
+        <!-- phần nút dưới cùng -->
+         <div class="manager--button">
+            <button class="button-text">&larr;</button>
+            <button class="button-text">1</button>
+            <button class="button-text">2</button>
+            <button class="button-text">3</button>
+            <button class="button-text">4</button>
+            <button class="button-text">5</button>
+            <button class="button-text">...</button>
+            <button class="button-text">21</button>
+            <button class="button-text">22</button>
+            <button class="button-text">&rarr;</button>
+        </div>
+    </section>
+    <script src="../js/category-manager.js"></script>
+  </body>
 </html>

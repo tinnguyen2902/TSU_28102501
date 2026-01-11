@@ -29,3 +29,45 @@ th, td {
   border-bottom: 1px solid #000;
   padding: 8px;
 }
+.body{
+    display: flex;
+    gap: 20px;
+}
+ .status-icon {
+  position: relative;   /* mốc để định vị icon & dropdown */
+  width: 250px;         /* tùy chỉnh */
+}
+.status-icon input {
+  width: 100%;
+  padding: 8px 35px 8px 10px; /* chừa chỗ bên phải cho icon */
+  box-sizing: border-box;
+}
+.status-icon i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+.options-container {
+  position: absolute;
+  top: 100%;        /* nằm ngay dưới input */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+.options-container p {
+  padding: 8px 10px;
+  margin: 0;
+  cursor: pointer;
+  transition: backgrount 0.2s;
+}
+
+.options-container p:hover {
+  background-color: #f0f0f0; /* Hiệu ứng khi di chuột vào */
+}
