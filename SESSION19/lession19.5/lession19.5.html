@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./lession19.5.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button onclick="add()" class="h1">ADD BOOKMARK</button>
+    </div>
+    <form action="" id="form" class="form"></form>
+    <!-- //box form -->
+    <form id="box-form" class="box" action="">
+      <div class="text">
+        <h2>Add Bookmark</h2>
+        <button type="button" id="close-btn" class="close-bnt">X</button>
+      </div>
+      <div class="child">
+        <div class="name">
+          <p>Website Name</p>
+          <input type="text" class="input" id="input-web" />
+          <p id="err-name" class="err">Khong duoc de trong</p>
+        </div>
+        <div class="url">
+          <p>Website URL</p>
+          <input type="text" class="input" id="input-url" />
+          <p id="err-url" class="err">Khong duoc de trong</p>
+        </div>
+        <button id="save" class="button" type="button">Save</button>
+      </div>
+    </form>
+    <script src="./lession19.5.js"></script>
+  </body>
+</html>

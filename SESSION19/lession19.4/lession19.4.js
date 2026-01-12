@@ -1,32 +1,78 @@
+// DOM
 let form = document.getElementById("form");
-let addInput = document.getElementById("add-input");
-let addButton = document.getElementById("add-button");
-let table = document.getElementById("button");
-let tableLength = document.getElementById("table-length");
-let clearButton = document.getElementById("clear-button");
-//list
-const lists = [
-  { id: 1, title: "quét nhà" },
-  { id: 2, title: "rửa bát" },
-  { id: 3, title: "học online" },
-  { id: 4, title: "đi chợ" },
+let inputNew = document.getElementById("add-input");
+let buttonNew = document.getElementById("add-button");
+let buttonClear = document.getElementById("clear-button");
+let table = document.getElementById("table");
+let dataLength = document.getElementById("table-length");
+let clearElement = document.getElementsByClassName("delete-child");
+// data
+let lists = JSON.parse(localStorage.getItem("toDoList"))||[
+  { id: 1, name: "Don nha" },
+  { id: 2, name: "Quet nha" },
+  { id: 3, name: "Rua bat" },
 ];
-//id:
-let currentId = Math.max(...lists.map((t) => t.id));
+
+//tao id
+let currentId = lists.length > 0 ? Math.max(...lists.map((t) => t.id)) : 0;
 //table
 function renderData() {
   table.innerHTML = "";
   for (let i = 0; i < lists.length; i++) {
-    let item = lists[i];
-    if (item.title !== "") {
-      const li = document.createElement("li");
-      li.dataset.id = item.id
-      li.textContent = item.title;
-      table.appendChild(li);
-    }
+    const row = document.createElement("tr");
+    row.innerHTML = `
+  <td>${lists[i].name}</td>
+  <td><button onclick = "deleteTask(${lists[i].id})" class = "delete-child"><i class="fa-regular fa-trash-can"></i></button></td>`;
+    table.appendChild(row);
   }
-  if (tableLength){
-    tableLength.textContent = lists.length
+  //gán số dữ liệu cho thẻ scan
+  if (dataLength) {
+    dataLength.innerText = lists.length;
+  }
+  saveData();
+}
+//lưu lên local 
+function saveData (){
+  localStorage.setItem("toDoList",JSON.stringify(lists));
+}
+//chuc nang them moi
+function addNewContent(e) {
+  e.preventDefault();
+  let newContent = inputNew.value.trim();
+  if (newContent === "") {
+    alert("vui long nhap noi dung");
+    return;
+  } else {
+    let newList = { id: ++currentId, name: newContent };
+    lists.push(newList);
+    inputNew.value = "";
+    inputNew.focus(); //dua con tro ve lai cho go
+    renderData();
   }
 }
+buttonNew.addEventListener("click", addNewContent);
+inputNew.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    addNewContent();
+  }
+});
 renderData();
+//chuc nang xoa
+function deleteTask(idDel) {
+  if (confirm("xac nhan xoa")) {
+    lists = lists.filter(function (list, index) {
+      return list.id != idDel;
+    });
+    //cap nhat lai len local
+    localStorage.setItem("toDoList",JSON.stringify(lists));
+    renderData();
+  }
+}
+//chức năng xoá all
+function delAll() {
+  if (confirm("xac nhan xoa.")) {
+    lists = [];
+    renderData();
+  }
+}

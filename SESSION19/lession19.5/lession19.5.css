@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(68, 68, 109);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.h1 {
+  border: 1px solid;
+  color: aqua;
+  background-color: black;
+  width: 40%;
+  height: 15vh;
+  text-align: center;
+  padding-top: 20px;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cột */
+  gap: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.container-form {
+  display: flex;
+  gap: 20px;
+  border: 1px solid;
+  width: 70%;
+  height: 100px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  list-style-type: none;
+  position: relative;
+}
+
+.close-bnt, .close-btn-child {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.box {
+  width: 50vh;
+  height: 30vh;
+  position: fixed;
+  right: 50%;
+  background: #333;
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 8px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+  line-height: 30px;
+}
+.box.show {
+  display: block;
+}
+.text {
+  display: flex;
+  background-color: rgb(141, 100, 161);
+  justify-content: space-between;
+  padding: 10px;
+}
+.input {
+  width: 30vh;
+  height: 30px;
+}
+.button {
+  width: 30vh;
+  height: 30px;
+  background-color: rgb(98, 98, 193);
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.child{
+    margin-left: 30px;
+}
+.err{
+    display: none;
+}

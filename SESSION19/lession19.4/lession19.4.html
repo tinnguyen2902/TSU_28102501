@@ -12,14 +12,15 @@
       <h1>Todo App</h1>
      <div class="add">
       <input id="add-input" class="input" type="text" placeholder="Add your new todo">
-      <button id="add-button" class="button-add"><i class="fa-solid fa-plus"></i></button>
+      <button type="button" id="add-button" class="button-add"><i class="fa-solid fa-plus"></i></button>
      </div>
      <table id="table"></table>
      <div class="clear">
-      <p class="clear-text">You have <scan id="table-length">...</scan> pending tasks</p>
-      <button id="clear-button" class="button-clear">Clear All</button>
+      <pre class="clear-text">You have <span id="table-length">...</span> pending tasks</pre>
+      <button type="button" onclick="delAll()" id="clear-button" class="button-clear">Clear All</button>
      </div>
     </form>
     <script src="./lession19.4.js"></script>
   </body>
 </html>
+<!-- the pre giup giu nguyen dau cach khi nhap vao ; dong 19 -->
